@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>ΚΡΕΜΑΛΑ</title>
+  </head>
+  <body class="bg-dark">
+    <main class="container">
+      <h1 class="text-center p-4 text-primary">ΚΡΕΜΑΛΑ(countries edition)</h1>
+      <p class="description">
+        Προσπάθησε να μαντέψεις τη λέξη. Με κάθε λάθος γράμμα θα κοκκινίζει και ενα μέλος του σώματος του ανθρώπου. Το παιχνίδι
+        λήγει οταν βρείς τη σωστή λέξη ή όταν κοκκινίσουν όλα τα μέλη του ανθρώπου. Πάτα ανανέωση για να ξαναπαίξεις.
+      </p>
+      <div class="result_message">
+        <h1 class="result_success success text-center">Σωστά!!!</h1>
+        <h1 class="result_failure failure text-center">Προσπάθησε πάλι!!!</h1>
+      </div>
+      <div class="hangman row">
+        <svg id="hangman" viewBox="0 0 96 96" width="300" height="300">
+          <line class="stage10 right-leg" x1="62" y1="70" x2="56" y2="56"></line>
+          <line class="stage9 left-leg" x1="50" y1="70" x2="56" y2="56"></line>
+          <line class="stage8 right-arm" x1="68" y1="46" x2="56" y2="40"></line>
+          <line class="stage7 left-arm" x1="44" y1="46" x2="56" y2="40"></line>
+          <line class="stage6 body" x1="56" y1="40" x2="56" y2="56"></line>
+          <circle class="stage5 head" cx="56" cy="34" r="6" fill="#bee5eb"></circle>
+          <line class="stage4" x1="56" y1="16" x2="56" y2="28"></line>
+          <line class="stage3" x1="24" y1="24" x2="32" y2="16"></line>
+          <line class="stage3" x1="21" y1="16" x2="60" y2="16"></line>
+          <line class="stage2" x1="24" y1="80" x2="24" y2="16"></line>
+          <line class="stage1" x1="16" y1="80" x2="32" y2="80"></line>
+        </svg>
+      </div>
+      <div class="letters text-center mt-5">
+        <span>Α</span>
+        <span>Β</span>
+        <span>Γ</span>
+        <span>Δ</span>
+        <span>Ε</span>
+        <span>Ζ</span>
+        <span>Η</span>
+        <span>Θ</span>
+        <span>Ι</span>
+        <span>Κ</span>
+        <span>Λ</span>
+        <span>Μ</span>
+        <span>Ν</span>
+        <span>Ξ</span>
+        <span>Ο</span>
+        <span>Π</span>
+        <span>Ρ</span>
+        <span>Σ</span>
+        <span>Τ</span>
+        <span>Υ</span>
+        <span>Φ</span>
+        <span>Χ</span>
+        <span>Ψ</span>
+        <span>Ω</span>
+      </div>
+      <div class="hidden_word row"></div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

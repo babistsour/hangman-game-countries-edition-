@@ -1,0 +1,76 @@
+body {
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 70%;
+  max-width: 1000px;
+}
+
+svg > * {
+  stroke: #8274ff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  transition: 0.25s;
+}
+
+.letters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.letters span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  opacity: 0.5;
+  background-color: rgba(43, 43, 43, 0.5);
+  cursor: pointer;
+  transform: rotate(1deg);
+  border-radius: 5px;
+  transform: skewX(5deg);
+}
+
+.letters span:hover {
+  transform: skewX(0deg);
+  transform: scale(1.3);
+}
+
+.success {
+  color: #23b12f;
+  display: none;
+}
+
+.failure {
+  color: #a82626;
+  display: none;
+}
+
+.hidden_word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hidden_word span {
+  border-bottom: 2px solid #8274ff;
+  color: transparent;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 2rem;
+  width: 10%;
+  display: block;
+}
+
+.reveal {
+  opacity: 1;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
